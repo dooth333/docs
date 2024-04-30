@@ -4,12 +4,13 @@ import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";	// 改成自己的�
 export default defineConfig({
   //base: "/docs/",
   title: "Dooth 的博客",
-  description: "A VitePress Site",
-  head: [["link", { rel: "icon", href: "/docs/logo.png" }]],
+  description: "一个用来记录笔记的网站",
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default- theme-config
 
-
+    outlineTitle: "文章目录",
+    outline: [1,6],
     nav: [
       {text: '主页', link: '/' },
       {
