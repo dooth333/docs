@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";	// 改成自己的路径
 // https://vitepress.dev/reference/site-config
+
 export default defineConfig({
   //base: "/docs/",
   title: "Dooth 的博客",
@@ -8,9 +9,9 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default- theme-config
-
     outlineTitle: "文章目录",
-    outline: [1,6],
+    outline: [1, 6],
+    logo:"/logo.png",
     nav: [
       {text: '主页', link: '/' },
       {
@@ -26,8 +27,6 @@ export default defineConfig({
         ]
       },
     ],
-
-    // sidebar: {"/embedded/stm32": set_sidebar("/embedded/stm32")},
     sidebar: {
       "/embedded/stm32": [{
         text: 'STM32 示例',
@@ -38,19 +37,6 @@ export default defineConfig({
         items: set_sidebar("/embedded/esp32")
       }],
     },
-      
-      // { "/embedded/stm32": set_sidebar("/embedded/stm32") },
-        
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
-
     socialLinks: [
       {
         icon: {
