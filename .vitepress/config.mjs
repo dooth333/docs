@@ -15,7 +15,7 @@ export default defineConfig({
       {
         text: '单片机', items: [
           { text: 'STM32', link: '/embedded/stm32/1、GPIO' },
-          { text: 'ESP32', link: '/api-examples' }
+          { text: 'ESP32', link: '/embedded/esp32/C语言' }
         ]
       },
       {
@@ -26,8 +26,19 @@ export default defineConfig({
       },
     ],
 
-    sidebar: {"/embedded/stm32": set_sidebar("/embedded/stm32")},
-
+    // sidebar: {"/embedded/stm32": set_sidebar("/embedded/stm32")},
+    sidebar: {
+      "/embedded/stm32": [{
+        text: 'STM32 示例',
+        items: set_sidebar("/embedded/stm32")
+      }],
+      "/embedded/esp32": [{
+        text: 'esp32 示例',
+        items: set_sidebar("/embedded/esp32")
+      }],
+    },
+      
+      // { "/embedded/stm32": set_sidebar("/embedded/stm32") },
         
     // sidebar: [
     //   {
