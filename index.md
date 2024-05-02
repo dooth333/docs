@@ -18,11 +18,18 @@ hero:
       link: /api-examples
 
 features:
-  - title: 特征1
-    details: 特征1的详细描述
-  - title: 特征2
-    details: 特征2的详细描述
+  - icon: 🎉
+    title: github主页
+    details: 展示我的GitHub主页
+    link: "https://github.com/"
+    linkText: "Github"
+  - icon:
+      src: "/bilibili.svg"
+    title: 哔哩哔哩主页
+    details: 展示我的哔哩哔哩主页
+    link: "https://www.bilibili.com/"
+    linkText: "BiliBili"
   - title: 特征3
-    details: 特征2的详细描述
+    details: 特征3的详细描述 
 ---
 
