@@ -49,7 +49,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: "Copyright@ 2024 dooth wenc",
+      copyright: "Copyright@ 2024 wangwenc",
     },
 
     // 设置搜索框的样式
