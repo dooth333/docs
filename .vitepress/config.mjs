@@ -76,7 +76,7 @@ export default defineConfig({
         },
       },
     },
-
+    /* 设置时间显示 */
     lastUpdated: {
       text: "最后更新",
     },
