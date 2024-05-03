@@ -7,11 +7,13 @@ export default defineConfig({
   title: "Dooth 的博客",
   description: "一个用来记录笔记的网站",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default- theme-config
-    outlineTitle: "文章目录",
-    outline: [1, 6],
-    logo:"/logo.png",
+    outlineTitle: "文章目录",// 设置目录的标题
+    outline: [1, 6],// 设置目录的最小和最大级别
+    logo: "/logo.png",// 设置logo
+    /* 设置导航栏 */
     nav: [
       {text: '主页', link: '/' },
       {
@@ -27,6 +29,7 @@ export default defineConfig({
         ]
       },
     ],
+    /* 设置侧边栏 */
     sidebar: {
       "/embedded/stm32": [{
         text: 'STM32 示例',
@@ -37,6 +40,7 @@ export default defineConfig({
         items: set_sidebar("/embedded/esp32")
       }],
     },
+    /* 设置社交链接 */
     socialLinks: [
       {
         icon: {
@@ -47,12 +51,12 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/dooth333' },
 
     ],
-
+    /* 设置页脚 */
     footer: {
       copyright: "Copyright@ 2024 wangwenc",
     },
 
-    // 设置搜索框的样式
+    /* 设置搜索框的样式 */ 
     search: {
       provider: "local",
       options: {
@@ -73,5 +77,8 @@ export default defineConfig({
       },
     },
 
+    lastUpdated: {
+      text: "最后更新",
+    },
   }
 })
